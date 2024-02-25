@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>진화 시뮬레이터</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="heading">FC 모바일 진화 시뮬레이터</h1>
+    <div style="display: flex; align-items: center;">
+        <img id="cardImage" src="design/jinhwa.png" alt="Card Image" style="width: 200px; height: auto; margin-bottom: 20px;">
+        <div id="evolutionResult" style="display: none; font-family: 'Nanum Gothic', sans-serif;"></div>
+	</div>
+    <label for="nl" >      </label>
+    <label for="chooseLevel">진화등급 선택하기:</label>
+    <select id="evolutionLevel">
+        <option value="1">0 > 1 (성공확률 100%)</option>
+        <option value="2">1 > 2 (성공확률 100%)</option>
+        <option value="3">2 > 3 (성공확률 81%)</option>
+        <option value="4">3 > 4 (성공확률 64%)</option>
+        <option value="5">4 > 5 (성공확률 50%)</option>
+        <option value="6">5 > 6 (성공확률 26%)</option>
+        <option value="7">6 > 7 (성공확률 15%)</option>
+        <option value="8">7 > 8 (성공확률 7%)</option>
+        <option value="9">8 > 9 (성공확률 4%)</option>
+        <option value="10">9 > 10 (성공확률 2%)</option>
+    </select>
+    <button id="evolveButton">진화</button>
+</div>
+<div>
+<footer>
+    <p> Eagle 이글
+</footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

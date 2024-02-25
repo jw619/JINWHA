@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+#cover { 
+    border: 5px solid transparent;
+};
+/* 표의 테두리 스타일 */
+table {
+    border-collapse: collapse; /* 테두리 겹침 방지 */
+    width: 100%; /* 표의 너비를 페이지 전체로 설정 */
+    margin-top: 20px; /* 표와 그 위 요소 사이의 여백 */
+}
+
+th, td {
+    border: 3px solid #000; /* 테두리 설정: 검은색, 1px */
+    padding: 16px; /* 셀 내부의 여백 */
+    text-align: center; /* 텍스트 정렬 */
+}
+
+th {
+    background-color: #f2f2f2; /* 헤더 셀의 배경색 */
+}
+/* fade-in 애니메이션 정의 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 애니메이션이 적용될 요소에 대한 스타일 */
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 3s; /* 3초 동안 애니메이션 실행 */
+    animation-fill-mode: forwards; /* 애니메이션 종료 상태 유지 */
+    display: none; /* 초기 상태는 숨김 */
+}
+/* style.css 파일 내용 */
+
+#evolutionResult {
+    font-size: 20px; /* 결과 텍스트 크기 증가 */
+    display: none; /* 기본적으로는 숨김 처리 */
+    /* 기타 필요한 스타일 속성 추가 */
+}
+footer {
+    text-align: center; /* 텍스트를 중앙 정렬 */
+    padding: 20px; /* 위아래 패딩 추가 */
+    margin-top: 30px; /* 내용과 푸터 사이의 여백 추가 */
+    background-color: #f2f2f2; /* 배경색 설정 */
+    color: #333; /* 텍스트 색상 설정 */
+    border-top: 1px solid #e7e7e7; /* 상단에 경계선 추가 */
+}
